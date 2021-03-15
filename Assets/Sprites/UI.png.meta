@@ -1,0 +1,596 @@
+fileFormatVersion: 2
+guid: 2587041844e638748856e40fc8c902db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4000982346974253384
+    second: Button
+  - first:
+      213: 7629833847068062263
+    second: UI_BlockBrick2
+  - first:
+      213: -8280319213857277271
+    second: UI_BlockPOW2
+  - first:
+      213: -4620525628359654238
+    second: UI_BlockRotate2
+  - first:
+      213: 3253753128563474334
+    second: UI_BlockUsed
+  - first:
+      213: 3131387523251703586
+    second: UI_Music
+  - first:
+      213: 3543300530929313008
+    second: UI_Music2
+  - first:
+      213: -1530171710210539401
+    second: UI_VoiceOff
+  - first:
+      213: 7299656830495803526
+    second: UI_VoiceOn
+  - first:
+      213: -8080928044200738417
+    second: UI_BlockExlamation
+  - first:
+      213: -2033065570465263759
+    second: UI_BG
+  - first:
+      213: 2995596970436181311
+    second: checkmarkWhite
+  - first:
+      213: 4744552479308488222
+    second: circleOutline
+  - first:
+      213: -8793900738548603838
+    second: excel
+  - first:
+      213: 8759457057848204423
+    second: GreyUI_BG
+  - first:
+      213: 4795029734073170995
+    second: WhiteButton
+  - first:
+      213: 6094403973947165714
+    second: LoopButton
+  - first:
+      213: -6872981278970422016
+    second: RandomButton
+  - first:
+      213: -5329091733176874206
+    second: OrderButton
+  - first:
+      213: -8574252316851851464
+    second: ExeIcon
+  - first:
+      213: 4282127918741777561
+    second: UI_BG2
+  - first:
+      213: 1128128408907192423
+    second: UI_BG3
+  - first:
+      213: 9148907371740580848
+    second: SpeakerButton
+  - first:
+      213: -6906238644097272094
+    second: WingButton
+  - first:
+      213: -611248481390631485
+    second: PeachLetter
+  - first:
+      213: 5052121963525419327
+    second: GreenGlow
+  - first:
+      213: -8868249471582744957
+    second: BGBlueTile
+  - first:
+      213: 3740695404883590930
+    second: BGPinkTile
+  - first:
+      213: -444968350551463309
+    second: YellowSelectedButton
+  - first:
+      213: 29321488027404851
+    second: HelpNoteBtn
+  - first:
+      213: 1799247320656897757
+    second: WhiteGlow
+  - first:
+      213: 8936645123592125230
+    second: BrownUsedButton
+  - first:
+      213: -8287411892119035760
+    second: xMark
+  - first:
+      213: -9033089913884776463
+    second: padlock
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BGPinkTile
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1239
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21fb505d6ae99e330800000000000000
+      internalID: 3740695404883590930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownUsedButton
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 981
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b7f6b3467550c70800000000000000
+      internalID: 8936645123592125230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checkmarkWhite
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1999
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3db511c29f729920800000000000000
+      internalID: 2995596970436181311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleOutline
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1919
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e916b975908d140800000000000000
+      internalID: 4744552479308488222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: excel
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1789
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244e3c0ded9c5f580800000000000000
+      internalID: -8793900738548603838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HelpNoteBtn
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1146
+        width: 512
+        height: 349
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49856734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ac82eecbb286000800000000000000
+      internalID: 29321488027404851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LoopButton
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 888
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c89d0ff1ca39450800000000000000
+      internalID: 6094403973947165714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrderButton
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 723
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b858cad434b06b0800000000000000
+      internalID: -5329091733176874206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: padlock
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1529
+        width: 103
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5048544, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7ebba259404a280800000000000000
+      internalID: -9033089913884776463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PeachLetter
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1497
+        width: 800
+        height: 550
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 47, y: 53, z: 45, w: 52}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5e635aeb86487f0800000000000000
+      internalID: -611248481390631485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandomButton
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 630
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00dde0ff0f34e90a0800000000000000
+      internalID: -6872981278970422016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeakerButton
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 723
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbcc8718c277fe70800000000000000
+      internalID: 9148907371740580848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Music
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 372
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f02819c5ce47b20800000000000000
+      internalID: 3131387523251703586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Music2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 114
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4ae764f055c2130800000000000000
+      internalID: 3543300530929313008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteButton
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 465
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cfdd2532e5b8240800000000000000
+      internalID: 4795029734073170995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteGlow
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 207
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6e3d2c7e538f810800000000000000
+      internalID: 1799247320656897757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xMark
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1659
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090a5eeeac23dfc80800000000000000
+      internalID: -8287411892119035760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowSelectedButton
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 465
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aa61984a723d9f0800000000000000
+      internalID: -444968350551463309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
