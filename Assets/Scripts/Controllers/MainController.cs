@@ -97,7 +97,10 @@ public class MainController : MonoBehaviour
             yield return null;
         }
 
-        Unpause();
+        if(UIInputModule == null) {
+            UIInputModule = GameObject.FindObjectOfType<InputSystemUIInputModule>();
+        }
+        //Unpause();
     }
 
     public void StopMusic()
@@ -172,6 +175,10 @@ public class MainController : MonoBehaviour
     public void SetState(GameState gameState)
     {
         MainController.MC.GS_Current = gameState;
+        if(UIInputModule == null) {
+            UIInputModule = GameObject.FindObjectOfType<InputSystemUIInputModule>();
+        }
+        
         if(gameState == GameState.Loading) {
             UIInputModule.enabled = false;
         } else {
