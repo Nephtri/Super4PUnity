@@ -41,7 +41,7 @@ MonoBehaviour:
   _productParameters:
     buildCounter: 0
     lastGeneratedVersion: 
-    version: 1.0.$DAYSSINCE("January 1, 2015").$SECONDS
+    version: 1.2.1
     autoGenerate: 0
   _releaseTypeList:
     releaseTypes:

@@ -104,9 +104,12 @@ public class ModPanel : MonoBehaviour
     }
 
     //Invoked by SourcePanel when changing source
-    public void SetModsByString(string modListStr)
+    //True = All mods found. False = Some mods not found
+    public bool SetModsByString(string modListStr)
     {
         OnClear(true);
+        var allModsFound = true;
+
         foreach(var modPath in modListStr.Split(','))
         {
             //TODO: If don't find a matching mod, put up a warning message
@@ -116,7 +119,17 @@ public class ModPanel : MonoBehaviour
                 item.Toggle.SetIsOnWithoutNotify(true);
                 OnItemSelect(item, true);
             }
+            //Remove "broken" reference
+            else
+            { 
+                if(allModsFound) { 
+                    allModsFound = false; 
+                }
+                SourcePanel.OnModToggle(false, modPath, true);
+            }
         }
+
+        return allModsFound;
     }
 
     //Call before leaving scene to clear unused mod sprites

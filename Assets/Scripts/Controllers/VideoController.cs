@@ -60,6 +60,7 @@ public class VideoController : InputController
         PosePanel.Initialize();
         CharCount = CharacterPanel.Initialize(); //Sets SelectedCharIndex
 
+
         CharacterPanel.SetNextCharacter(SelectedCharIndex, false);
         SetNextPoseIndex(0);
         PosePanel.OnSelectItem(NextPoseIndex, true); //Results in loading 1st video
@@ -96,22 +97,26 @@ public class VideoController : InputController
 
     public void OnToggleCharStyle()
     {
+        var isCharChanged = false;
+
         if(PosePanel.PlaybackStyle == PlaybackStyle.Order)
         {
             if(ActivePoseIndex >= ActivePoseCount - 1) 
             {
-                CharacterPanel.SetNextCharacter(-1, false);
+                isCharChanged = CharacterPanel.SetNextCharacter(-1, false);
                 //OnCharacterSelected(ActivePoseCount, false);
             }
             else {
-                CharacterPanel.SetNextCharacter(ActiveCharIndex, false);
+                isCharChanged = CharacterPanel.SetNextCharacter(ActiveCharIndex, false);
             }
         }
         else {
-            CharacterPanel.SetNextCharacter(-1, false);
-            
+            isCharChanged = CharacterPanel.SetNextCharacter(-1, false);
         }
-        OnCharacterSelected(ActivePoseCount, false);
+
+        if(isCharChanged) {
+            OnCharacterSelected(ActivePoseCount, false);
+        }
         SetNextPoseIndex();
         // if(!CheckLooping()) {
             
@@ -181,12 +186,14 @@ public class VideoController : InputController
     {
         if(isManual)
         {
+            Debug.Log("Create Manual");
             SelectedPoseCount = poseCount;
             PosePanel.CreatePoses(poseCount);
             PosePanel.StyleBtns(SelectedCharIndex == ActiveCharIndex, SelectedCharIndex == NextCharIndex);
         }
         else
         {
+            Debug.Log("Create Nonmanual");
             PosePanel.CreatePoses(poseCount);
         }
     }

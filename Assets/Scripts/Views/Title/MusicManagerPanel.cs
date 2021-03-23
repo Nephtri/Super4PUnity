@@ -107,9 +107,12 @@ public class MusicManagerPanel : MonoBehaviour
     }
 
     //Invoked by SourcePanel when changing source
-    public void SetItemsByString(string musicListStr)
+    //True = all mods found. False = some mods not found
+    public bool SetItemsByString(string musicListStr)
     {
         OnClear(true);
+        var allMusicFound = true;
+
         foreach(var musicFilePath in musicListStr.Split(','))
         {
             //TODO: If don't find a matching mod, put up a warning message
@@ -119,7 +122,16 @@ public class MusicManagerPanel : MonoBehaviour
                 item.Toggle.SetIsOnWithoutNotify(true);
                 OnItemSelect(item, true);
             }
+            else
+            {
+                if(allMusicFound) { 
+                    allMusicFound = false; 
+                }
+                SourcePanel.OnModToggle(false, musicFilePath, true);
+            }
         }
+
+        return allMusicFound;
     }
 
     private ToggleListItem CreateMusicListItem(string fileName, string fullFileName, int listIndex)

@@ -9,17 +9,7 @@ public class MenuController : InputController
     public ModPanel ModPanel;
     public MusicManagerPanel MusicPanel;
     public InputField PresetInputField;
-
     public HelpPanel HelpPanel;
-
-    // public CanvasGroup HelpPanel;
-    // public RectTransform InnerHelpPanelRect;
-    // public float HelpPanelTransitionSpeed;
-    // private Vector2 HelpPanelTransitionVector;
-    // private GameObject HelpPanelTextGroup;
-    // private Vector2 InitialHelpPanelSizeDelta;
-    // private bool IsHelpOpen;
-    // private bool IsHelpTransitionComplete;
 
     public Dropdown ResDropdown;
     public Toggle FullscreenToggle;

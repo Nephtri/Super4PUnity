@@ -94,8 +94,8 @@ public class SourcePanel : MonoBehaviour
         MoveArrowToSelectedItem();
 
         //Hand off ModListStr to ModPanel
-        ModPanel.SetModsByString(SelectedItem.Value);
-        MusicPanel.SetItemsByString(SelectedItem.MusicValue);
+        var allModsFound = ModPanel.SetModsByString(SelectedItem.Value);
+        var allMusicFound = MusicPanel.SetItemsByString(SelectedItem.MusicValue);
 
         if(sourceListItem == DefaultItem)
         {
@@ -110,6 +110,11 @@ public class SourcePanel : MonoBehaviour
             PresetNameInput.text = sourceListItem.Name;
             CheckSaveBtn();
             DeleteBtn.gameObject.SetActive(true);
+
+            if(!allModsFound || !allMusicFound)
+            {
+                OnSavePreset();
+            }
         }
         CheckPlayBtn();
     }

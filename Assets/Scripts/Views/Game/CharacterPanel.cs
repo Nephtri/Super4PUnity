@@ -95,7 +95,8 @@ public class CharacterPanel : MonoBehaviour
     }
 
     //Sets NextItem var based on passed index OR playback style and ActiveItem
-    public void SetNextCharacter(int index = -1, bool forcePoseUpdate = true)
+    //True = Character Changed. False = Character not changed.
+    public bool SetNextCharacter(int index = -1, bool forcePoseUpdate = true)
     {
         if(index == -1)
         {
@@ -114,7 +115,7 @@ public class CharacterPanel : MonoBehaviour
         }
 
         var item = ContentListItems[index];
-        if(NextItem == item) { return; }
+        if(NextItem == item) { return false; }
 
         NextItem = item;
 
@@ -137,6 +138,7 @@ public class CharacterPanel : MonoBehaviour
         VideoController.VC.NextPoseCount = item.VideoPaths.Count;
         
         if(forcePoseUpdate) { VideoController.VC.OnSetNextCharIndex(); }
+        return true;
     }
 
     public void OnSelectItem(int index, bool showHighlighter = true, bool isManual = true)

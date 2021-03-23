@@ -128,13 +128,23 @@ public class GameDataManager : MonoBehaviour {
     //Set Music based on results of Title Screen
     public void SetSelectedMusic(string selectedMusicStr)
     {
-        SelectedMusic = selectedMusicStr.Split(',').ToList();
+        SelectedMusic = selectedMusicStr.Split(',').OrderBy(x => x).ToList();
+
+        if(SelectedMusic.Any(x => x.Contains("BBSa_")))
+        {
+            var prioritizedMusic = SelectedMusic.Where(x => x.Contains("BBSa_")).ToList();
+            foreach(var music in prioritizedMusic)
+            {
+                SelectedMusic.Remove(music);
+            }
+            SelectedMusic.InsertRange(0, prioritizedMusic);
+        }
     }
 
     //Set Mods based on results of Title Screen
     public void SetSelectedMods(string selectedModStr)
     {
-        SelectedMods = selectedModStr.Split(',').ToList();
+        SelectedMods = selectedModStr.Split(',').OrderBy(x => x).ToList();
     }
 
     public string GetModsPath()
