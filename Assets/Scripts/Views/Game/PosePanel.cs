@@ -16,7 +16,9 @@ public class PosePanel : MonoBehaviour
     public Text PlaybackStyleBtnTxt;
     public PlaybackStyle PlaybackStyle;
     public Color DefaultTxtColor;
+    private Color LockedTxtColor;
     public Color DefaultBtnColor;
+    private Color LockedBtnColor;
     public Color SelectedBtnColor;
 
     private List<PoseListItem> ContentListItems;
@@ -41,6 +43,11 @@ public class PosePanel : MonoBehaviour
         DefaultBlockSpriteName = "WhiteButton";
         NextBlockSpriteName = "YellowSelectedButton";
         SetPlaybackStyle(GameDataManager.GM.PlyrConfigData.PosePlaybackStyle);
+
+        LockedTxtColor = new Color(77, 77, 77);
+        LockedBtnColor = new Color(191, 191, 191);
+        
+        HelpBtn.onClick.AddListener(VideoController.VC.OnHelpClick);
     }
     
     public void CreatePoses(int poseCount)
@@ -68,11 +75,13 @@ public class PosePanel : MonoBehaviour
             poseItem.BlockImg.sprite = SpriteLibrary.SL.GetSpriteByName(DefaultBlockSpriteName);
             poseItem.NumText.text = (i+1).ToString();
             poseItem.BlockBtn.onClick.AddListener(() => OnSelectItem(poseIndex, true));
-
+            
             ContentListItems.Add(poseItem);
         }
         ResizeScrollView(ContentListItems.Count);
     }
+
+
 
     public void OnSelectItem(int index, bool isManual)
     {

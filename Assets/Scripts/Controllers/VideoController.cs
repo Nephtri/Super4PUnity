@@ -186,14 +186,12 @@ public class VideoController : InputController
     {
         if(isManual)
         {
-            Debug.Log("Create Manual");
             SelectedPoseCount = poseCount;
             PosePanel.CreatePoses(poseCount);
             PosePanel.StyleBtns(SelectedCharIndex == ActiveCharIndex, SelectedCharIndex == NextCharIndex);
         }
         else
         {
-            Debug.Log("Create Nonmanual");
             PosePanel.CreatePoses(poseCount);
         }
     }

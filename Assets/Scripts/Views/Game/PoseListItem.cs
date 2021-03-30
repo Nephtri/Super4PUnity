@@ -7,8 +7,10 @@ public class PoseListItem : MonoBehaviour
     // public int VideoIndex;
     // public int VoiceIndex;
     public RectTransform RectTrans;
-    public Button BlockBtn;
+    public ExButton BlockBtn;
     public Image BlockImg;
     public Text NumText;
     public bool IsPooled;
+
+    private Image LockImg;
 }

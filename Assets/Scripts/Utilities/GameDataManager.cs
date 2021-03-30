@@ -41,7 +41,6 @@ public class GameDataManager : MonoBehaviour {
         if(IsPlayerDataLoaded) { return; }
         
         //Set all Directories (for rest of runtime)
-        
         #if UNITY_STANDALONE_OSX
             PLAYER_DIR = Application.dataPath + "/MacOS" + PLAYER_DIR;
             MODS_DIR = Application.dataPath + "/MacOS" + MODS_DIR;

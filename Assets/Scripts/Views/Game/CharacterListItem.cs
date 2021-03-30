@@ -1,6 +1,6 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class CharacterListItem : MonoBehaviour
 {
@@ -11,5 +11,8 @@ public class CharacterListItem : MonoBehaviour
     public string CharacterName;
     public List<string> VideoPaths;
     //TODO: Implement VoicePaths logic
-    public List<string> VoicePaths;
+    //public List<string> VoicePaths;
+
+    public List<CharPoseData> PoseDataList;
+    public int PoseCount => PoseDataList.Count;
 }

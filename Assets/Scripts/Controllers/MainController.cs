@@ -171,6 +171,8 @@ public class MainController : MonoBehaviour
 
     public void SetState(GameState gameState)
     {
+        if(UIInputModule == null) { UIInputModule = GameObject.FindObjectOfType<InputSystemUIInputModule>(); }
+
         MainController.MC.GS_Current = gameState;
         if(gameState == GameState.Loading) {
             UIInputModule.enabled = false;
